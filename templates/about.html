@@ -3,8 +3,11 @@
 <head> 
 <meta charset="UTF-8"> 
 <title>My Website - About</title> 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}" />
+
 </head> 
-<body> 
+<body class=" container"> 
+
 <h1>Sheldon Jones</h1> 
 <p>Sometimes I wonder if I am making the right life choices. Especially  <br> those decisions that have grave impact on
     where they will lead me. </br>
@@ -13,5 +16,6 @@
     computing which are more practical than theoretical; more like a technician. <br>
     Yet the more qualified persons tend to do the supervision of the </br>
 technician which to me takes the fun out of the practicality that I enjoy. </p> 
+<img src="{{ url_for('static', filename='images/maletech.png') }}" alt="Male Technician in lab image" class="profilepic">
 </body> 
 </html>
